@@ -8,4 +8,9 @@
 Tích hợp hết các chức năng này lại thành 1 server và giao tiếp qua RESTful API
 
 ## RESTful API with JSON over HTTP
-Tất cả các ngôn ngữ khác có thể giao tiếp với Elaticsearch qua cổng 9200 bằng API RESTful, có thể truy cập bằng ứng dụng web yêu thích của bạn. Trong thực tế, như bạn đã thấy, bạn thậm chí có thể nói chuyện với Elaticsearch từ dòng lệnh bằng cách sử dụng lệnh curl.
+Tất cả các ngôn ngữ khác có thể giao tiếp với Elaticsearch qua port 9200 bằng API RESTful, có thể truy cập bằng ứng dụng web yêu thích của bạn. Trong thực tế, như bạn đã thấy, bạn thậm chí có thể nói chuyện với Elaticsearch từ dòng lệnh bằng cách sử dụng lệnh curl.
+
+Cái này gọi là công thức 
+```
+curl -H "Content-Type: application/json"  -X<VERB> '<PROTOCOL>://<HOST>/<PATH>?<QUERY_STRING>' -d '<BODY>'
+```
